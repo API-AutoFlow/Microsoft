@@ -34,7 +34,7 @@ Is you have questions about this example, feel free to post your question on the
 Here we want to call the Outlook API to get the Token.
 The returned data is stored in a new variable called "result"
 
-![Image](MS-Outlook-inbox/img/Get Token fixed.png)
+![Image](img/Get Token fixed.png)
 
 ## Step 2. Decode JSON data
 Outlook returns the data in JSON format. We can use the json/decode action to put the retrieved Token in a more accessible format.
@@ -71,12 +71,12 @@ Use the URL from the previous action to get access to the mail folders.
 Use the srting/uri-url-encode for both the filter "isRead eq false" and the userPrincipal name (the user's email).
 
 ![Image](img/URI URL Encode Filter.png)
-![Image](MS-Outlook-inbox/img/URI URL Encode email fixed.png)
+![Image](img/URI URL Encode email fixed.png)
 
 ## Step 9. Create URL for unread emails from inbox
 Use the action string/join to combine userPrincipalName and the Filter. The result will come in the variable "url".
 
-![Image](MS-Outlook-inbox/img/Creating URL for unread emails from inbox fixed.png)
+![Image](img/Creating URL for unread emails from inbox fixed.png)
 
 ## Step 10. Get email from inbox
 Call the Outlook API with the variable "url". The result should be stored on the variable "messages."
