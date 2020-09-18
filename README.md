@@ -65,12 +65,12 @@ Join the results by using the action string/join. The result will be in the vari
 ## Step 7. Get Mail Folders
 Use the URL from the previous action to get access to the mail folders.
 
-![Image](img/Get Mail Folders.png)
+![Image](img/GetMailFolders.png)
 
 ## Step 8. URI-URL_Encode
 Use the srting/uri-url-encode for both the filter "isRead eq false" and the userPrincipal name (the user's email).
 
-![Image](img/URI URL Encode Filter.png)
+![Image](img/URI-URL-Encode-Filter.png)
 ![Image](img/URI-URL-Encode-email-fixed.png)
 
 ## Step 9. Create URL for unread emails from inbox
@@ -81,7 +81,7 @@ Use the action string/join to combine userPrincipalName and the Filter. The resu
 ## Step 10. Get email from inbox
 Call the Outlook API with the variable "url". The result should be stored on the variable "messages."
 
-![Image](img/Get email from inbox.png)
+![Image](img/GetEmailFromInbox.png)
 
 
 
